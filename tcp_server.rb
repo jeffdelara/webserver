@@ -3,7 +3,7 @@ require 'socket'
 SERVER_ROOT = "public"
 
 def main
-    server = TCPServer.new 5000 # Server bind to port 2000
+    server = TCPServer.new 5000 # Server bind to port 5000
 
     loop do
         Thread.start(server.accept) do |client|
